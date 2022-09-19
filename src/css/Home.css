@@ -1,0 +1,40 @@
+.homeContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  margin: 20vh auto;
+  width: 50vw;
+  height: 100%;
+  min-height: 50vh;
+  border: solid 2px #5b5b5b;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #31393C;
+}
+.homeLoginButton {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid #000;  
+  cursor: pointer;
+  background-color: #DAFFED;
+  color: #000;
+  font-size: 1rem;
+}
+.homeLoginButton:hover{
+  background-color: #b7dac9;
+}
+
+.aboutMe{
+  margin-top: 3vh;
+  text-decoration: none;
+  color: #d2c7e1;
+} 
+
+.title {
+  font-size: 3rem;
+  display: inline-block;
+  border-bottom: solid 3px #DAFFED;
+}
+

@@ -1,0 +1,17 @@
+body{
+  color: #F8F4F9;
+  background-image: url('../../public/stacked-waves.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+

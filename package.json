@@ -7,20 +7,31 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
+    "@types/node": "^18.7.11",
+    "@types/nodemailer": "^6.4.5",
+    "@types/pg": "^8.6.5",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@types/spotify-web-api-node": "^5.0.7",
+    "async-sema": "^3.1.1",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.8",
+    "pg": "^8.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.4.2",
+    "spotify-web-api-node": "^5.0.2",
+    "typescript": "^4.7.4",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn build && node ./build/server.js",
+    "build": "react-scripts build  && cp -R ./.env ./build && tsc server.ts --noEmitOnError --outDir build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "reactonly": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +50,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1"
   }
 }

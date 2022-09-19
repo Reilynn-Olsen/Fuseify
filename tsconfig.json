@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "outDir": "build",
+    "noEmitOnError": true,
     "target": "es5",
     "lib": [
       "dom",
